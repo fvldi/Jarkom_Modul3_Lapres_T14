@@ -1,0 +1,91 @@
+**uml surabaya
+
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 10.151.76.82
+netmask 255.255.255.252
+gateway 10.151.76.81
+
+auto eth1
+iface eth1 inet static
+address 192.168.0.1
+netmask 255.255.255.248
+
+auto eth2
+iface eth2 inet static
+address 192.168.1.1
+netmask 255.255.255.0
+
+auto eth3
+iface eth3 inet static
+address 10.151.77.161
+netmask 255.255.255.248
+
+**uml malang
+
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 10.151.77.162
+netmask 255.255.255.248
+gateway 10.151.77.161
+
+**uml mojokerto
+
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 10.151.77.163
+netmask 255.255.255.248
+gateway 10.151.77.161
+
+**uml tuban
+
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 10.151.77.164
+netmask 255.255.255.248
+gateway 10.151.77.161
+
+**uml gresik
+
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet dhcp 
+
+**uml sidoarjo
+
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet dhcp
+
+**uml madiun
+
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet dhcp
+
+**uml banyuwangi
+
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet dhcp
+
