@@ -191,7 +191,7 @@ pada subnet 3 mendapatkan peminjaman IP selama 10 menit.
 
 Setting user autentikasi
 * lakukan instalasi squid
-* lakukan setting pada `htpasswd -c /etc/squid/passwd userta_e09` dengan password: inipassw0rdta_e09 seperti berikut
+* lakukan setting pada `htpasswd -c /etc/squid/passwd userta_t14` dengan password: inipassw0rdta_t14 seperti berikut
 
 <img width="378" alt="no 7" src="https://raw.githubusercontent.com/fvldi/Jarkom_Modul3_Lapres_T14/main/img/7.png">
 
