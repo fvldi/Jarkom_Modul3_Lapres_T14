@@ -12,7 +12,7 @@ Melakukan setting UML sesuai dengan topologi berikut
 
 * buat `topologi.sh` sebagai berikut
 
-<img width="646" alt="topologi" src="./img/1a.png">
+<img width="646" alt="topologi" src="https://raw.githubusercontent.com/fvldi/Jarkom_Modul3_Lapres_T14/main/img/1a.PNG">
 
 * Setting router SURABAYA pada `/etc/sysctl.conf` lalu
 * un-comment `net.ipv4.ip_forward=1` 
@@ -132,7 +132,7 @@ melakukan setting router surabaya sebagai DHCP relay
 * Install `isc-dhcp-relay pada` uml SURABAYA dengan command `apt-get install isc-dhcp-relay`
 * lakukan setting pada file `/etc/default/isc-dhcp-relay` seperti berikut
 
-<img width="380" alt="relay" src="./img/2.png">
+<img width="380" alt="relay" src="https://raw.githubusercontent.com/fvldi/Jarkom_Modul3_Lapres_T14/main/img/2.PNG">
 
 * lakukan `service isc-dhcp-relay restart` untuk menjalankan dhcp-relay
 
@@ -143,37 +143,37 @@ Setting client pada subnet 1 mendapatkan range IP dari 192.168.0.10 sampai 192.1
 * Install `isc-dhcp-server` pada uml TUBAN dengan command `apt-get install isc-dhcp-server`
 * lakukan setting file `/etc/default/isc-dhcp-server` seperti berikut
 
-<img width="377" alt="server" src="./img/3a.png">
+<img width="377" alt="server" src="https://raw.githubusercontent.com/fvldi/Jarkom_Modul3_Lapres_T14/main/img/3a.PNG">
 
 * lakukan `service isc-dhcp-server restart` untuk menjalankan dhcp-server
 * Edit file `/etc/dhcp/dhcpd.conf` dengan konfigurasi sebagai berikut
 
-<img width="389" alt="server2" src="./img/3b4a5a6a.png">
+<img width="389" alt="server2" src="https://raw.githubusercontent.com/fvldi/Jarkom_Modul3_Lapres_T14/main/img/3b4a5a6a.PNG">
 
 * lakukan test pada client subnet 1 yaitu Gresik dan Sidoarjo
 
-<img width="381" alt="no 3 test gresik" src="./img/3c.png">
-<img width="379" alt="no 3 test sidoarjo" src="./img/3d.png">
+<img width="381" alt="no 3 test gresik" src="https://raw.githubusercontent.com/fvldi/Jarkom_Modul3_Lapres_T14/main/img/3c.PNG">
+<img width="379" alt="no 3 test sidoarjo" src="https://raw.githubusercontent.com/fvldi/Jarkom_Modul3_Lapres_T14/main/img/3d.PNG">
 
 **soal 4**
 
 Setting lient pada subnet 3 mendapatkan range IP dari 192.168.1.50 sampai 192.168.1.70.
 * pada file /etc/dhcp/dhcpd.conf pastikan konfigurasi sebagai berikut
 
-<img width="383" alt="server3" src="./img/3b4a5a6a.PNG">
+<img width="383" alt="server3" src="https://raw.githubusercontent.com/fvldi/Jarkom_Modul3_Lapres_T14/main/img/3b4a5a6a.PNG">
 
 * Jalankan `service isc-dhcp-server restart` untuk menjalankan dhcp-server
 * lakukan test pada client di subnet 3 yaitu Madiun dan Banyuwangi
 
-<img width="386" alt="no 4 test banyuwangi" src="./img/4b.png">
-<img width="383" alt="no 4 test madiun" src="./img/4c.png">
+<img width="386" alt="no 4 test banyuwangi" src="https://raw.githubusercontent.com/fvldi/Jarkom_Modul3_Lapres_T14/main/img/4b.PNG">
+<img width="383" alt="no 4 test madiun" src="https://raw.githubusercontent.com/fvldi/Jarkom_Modul3_Lapres_T14/main/img/4c.PNG">
 
 **soal 5**
 
 Client mendapatkan DNS Malang dan DNS 202.46.129.2 dari DHCP
 * pada file /etc/dhcp/dhcpd.conf pastikan konfigurasi sebagai berikut
 
-<img width="382" alt="server4" src="./img/3b4a5a6a.PNG">
+<img width="382" alt="server4" src="https://raw.githubusercontent.com/fvldi/Jarkom_Modul3_Lapres_T14/main/img/3b4a5a6a.PNG">
 
 * Jalankan `service isc-dhcp-server restart` untuk menjalankan dhcp-server
 
@@ -183,7 +183,7 @@ Client di subnet 1 mendapatkan peminjaman alamat IP selama 5 menit, sedangkan cl
 pada subnet 3 mendapatkan peminjaman IP selama 10 menit.
 * pada file /etc/dhcp/dhcpd.conf pastikan konfigurasi sebagai berikut
 
-<img width="381" alt="server5" src="./img/3b4a5a6a.PNG">
+<img width="381" alt="server5" src="https://raw.githubusercontent.com/fvldi/Jarkom_Modul3_Lapres_T14/main/img/3b4a5a6a.PNG">
 
 * Jalankan `service isc-dhcp-server restart` untuk menjalankan dhcp-server
 
@@ -193,7 +193,7 @@ Setting user autentikasi
 * lakukan instalasi squid
 * lakukan setting pada `htpasswd -c /etc/squid/passwd userta_e09` dengan password: inipassw0rdta_e09 seperti berikut
 
-<img width="378" alt="no 7" src="./img/7.png">
+<img width="378" alt="no 7" src="https://raw.githubusercontent.com/fvldi/Jarkom_Modul3_Lapres_T14/main/img/7.png">
 
 **soal 8**
 
@@ -202,7 +202,7 @@ Setting agar Proxy server hanya dapat diakses pada hari Selasa-Rabu pukul 13.00-
 
 `acl WAKTU time TW 13:00-18:00`
 
-<img width="388" alt="no 8" src="./img/8.png">
+<img width="388" alt="no 8" src="https://raw.githubusercontent.com/fvldi/Jarkom_Modul3_Lapres_T14/main/img/8.png">
 
 
 **soal 9**
@@ -214,11 +214,11 @@ acl WAKTU time TWH 21:00-23:59
 acl WAKTU time WHF 00:00-09:00
 ```
 
-<img width="384" alt="no 9" src="./img/8.png">
+<img width="384" alt="no 9" src="https://raw.githubusercontent.com/fvldi/Jarkom_Modul3_Lapres_T14/main/img/8.png">
 
 * lalu pada `/etc/squid/acl.conf` dapat ditambahkan seperti berikut
 
-<img width="381" alt="no 9 kedua" src="./img/9.png">
+<img width="381" alt="no 9 kedua" src="https://raw.githubusercontent.com/fvldi/Jarkom_Modul3_Lapres_T14/main/img/9.png">
 
 **soal 10**
 
@@ -227,5 +227,5 @@ Setting agar ketika mengakses google.com, maka akan melakukan redirect menuju mo
 
 * berikut hasilnya
 
-<img width="960" alt="no 10 test" src="./img/10.png">
+<img width="960" alt="no 10 test" src="https://raw.githubusercontent.com/fvldi/Jarkom_Modul3_Lapres_T14/main/img/10.png">
 
